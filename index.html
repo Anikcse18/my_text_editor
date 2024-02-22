@@ -21,6 +21,7 @@
             font-family: 'Manrope', sans-serif;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- tailwind Custom Property -->
 
@@ -35,18 +36,46 @@
         <section class="w-4/6 h-4/6 bg-emerald-400 mx-auto mt-4 rounded-md py-8 px-20 ">
 
             <div class="border-dashed border-2 border-slate-900 w-auto h-96 px-14">
-                <h1>Logo here</h1>
-               
-                <hr>
-            </div>
-             <div>
+                <div class="flex justify-between py-3">
+                    <div class="flex gap-4">
+                        <button id="boldText"><span class="font-semibold">B</span></button>
+                        <button id="italicText"><span class="font-semibold italic">I</span></button>
+                        <button id="underlineText"><span class="font-semibold underline">U</span></button>
+                    </div>
+                    <div class="flex gap-4">
+                        <button id="alignLeft"><i class="fa-solid fa-align-left"> </i></button>
+                        <button id="alignMiddle"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="alignRight"><i class="fa-solid fa-align-right"></i></button>
+                        <button id="alignJustify"><i class="fa-solid fa-align-justify"></i></button>
 
+                    </div>
+                    <div class="flex gap-3">
+                        <!-- fontSize -->
+                        <input type="number" class="w-9 h-6 rounded-sm bg-emerald-100" id="fontSize">
+                        <button id="capitalSmall" class="font-semibold">aA</button>
+                        <input type="color" id="head" class="w-10 h-6" value="#800080" />
+
+                    </div>
+                </div>
+                <hr>
+
+                <div class="my-5 border-solid border-2 border-slate-800 h-72">
+                    <textarea class="h-full w-full" placeholder="Type your text here" id="textArea"></textarea>
 
                 </div>
+            </div>
+            <div>
+
+            </div>
+
+            <div>
+
+
+            </div>
 
         </section>
     </main>
-    <script src="./js/text.js"></script>
+    <script src="./js/textstyleB_I_U.js"></script>
 </body>
 
 </html>
